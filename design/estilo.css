@@ -1,0 +1,164 @@
+*,
+a::before,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.125rem;
+    height: 100vh;
+    display: -moz-grid;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    background-color: black;
+    color: #e8e8e2;
+
+}
+.hero img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    clip-path: circle(50% at 50% 50%);
+    filter: grayscale(1);
+    transition: all 500ms ease-in-out;
+}
+.hero img:hover,
+.hero img:focus{
+filter: grayscale(0);
+}
+
+.icone img{
+    width: 30px;
+    background-color: white;
+    border-radius: 10%;
+   
+    
+}
+.icone img:hover{
+    background-color: #dddddddd;
+}
+
+
+.container{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    width: 90%;
+    max-width: 1100px;
+    align-items: center;
+    gap: 2rem;
+}
+
+.pessoal{
+    margin-bottom: 2rem;
+}
+.name{
+    font-size: 900;
+    font-size: 2rem;
+}
+.local{
+    font-weight: 400;
+}
+.descricao{
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.linguagens{
+margin-bottom: 3rem;
+display: -webkit-flex;
+display: -moz-flex;
+display: -ms-flex;
+display: flex;
+align-items: center;
+gap: 1rem;
+
+
+}
+
+.btns{
+
+
+
+
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.btn{
+   
+    color: #e8e8e2;
+   
+    font-size: 1.125rem;
+    font-family: ''Inter,sans-serif;
+    padding: 0.8rem 2.5rem;
+    cursor: pointer;
+    width: 200px;
+    padding: 15px 0;
+
+margin: 20px 10px;
+border-radius: 25px;
+font-weight: bold;
+border: 2px solid #009688;
+background: transparent;
+color: #fff;
+cursor: pointer;
+position: relative;
+overflow: hidden;
+
+    
+}
+@media(max-width:900px){
+.container{
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    flex-direction: column;
+
+}
+
+}
+
+@media(max-width:400px){
+    .hero img{
+    width: 250px;
+    height: 250px;
+    
+    }
+    
+    }
+
+
+ .hero img:hover{
+        border-radius: 50%;
+        border: 5px solid green;
+    }
+    
+
+
+
+
+span{
+    background:#009698 ;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border:none ;
+}
